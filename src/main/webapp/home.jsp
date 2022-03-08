@@ -2,16 +2,18 @@
     Document   : home
     Created on : 2 mars 2022, 08:41:34
     Author     : xanmalodon
+
 --%>
 
 <%@ page contentType="text/html" pageEncoding="UTF-8" import="java.sql.Statement, java.util.Random"
-         isELIgnored="false" autoFlush="true" isThreadSafe="true" session="false" info="Ecrit par xamalodon" errorPage="error.jsp" %>
+         isELIgnored="false" autoFlush="true" isThreadSafe="true" session="true" info="Ecrit par xamalodon" errorPage="error.jsp" %>
 
 <%--<%@ page import="java.util.ArrayList"%>--%>
 
 <%@ include file="header.jsp" %>
 
-<%--<%@ taglib uri="uri" prefix="fx" %>--%>
+<%--<%@ taglib uri="uri" prefix="fx" %>           <%= exception.getMessage() %>
+--%>
 
 <!DOCTYPE html>
 <html>
@@ -24,7 +26,7 @@
         <%
             out.println(7+15);
             out.println(7+20);
-            pageContext.setAttribute("name", "xanmalodon", PageContext.SESSION_SCOPE);
+//            pageContext.setAttribute("name", "xanmalodon", PageContext.SESSION_SCOPE);
         %>
         
         <%

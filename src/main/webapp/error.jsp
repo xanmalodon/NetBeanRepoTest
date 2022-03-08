@@ -2,9 +2,10 @@
     Document   : error
     Created on : 8 mars 2022, 22:55:38
     Author     : xanmalodon
+isErrorPage="true" 
 --%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8" isErrorPage="true" %>
+<%@page contentType="text/html" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -13,6 +14,5 @@
     </head>
     <body bgcolor="red">
         Error
-        <%= exception.getMessage() %>
     </body>
 </html>
