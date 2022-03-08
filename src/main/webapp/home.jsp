@@ -14,7 +14,9 @@
     <body>
         <h1>Hello World!</h1>
         <%
-            out.println(7+5);
+            out.println(7+15);
+            out.println(7+20);
+
         %>
             
     </body>
