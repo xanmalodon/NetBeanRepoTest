@@ -5,9 +5,9 @@
 --%>
 
 <%@ page contentType="text/html" pageEncoding="UTF-8" import="java.sql.Statement, java.util.Random"
-         isELIgnored="false" autoFlush="true" isThreadSafe="true" session="false" info="Ecrit par xamalodon"%>
+         isELIgnored="false" autoFlush="true" isThreadSafe="true" session="false" info="Ecrit par xamalodon" errorPage="error.jsp" %>
 
-<%@ page import="java.util.ArrayList"%>
+<%--<%@ page import="java.util.ArrayList"%>--%>
 
 <%@ include file="header.jsp" %>
 
@@ -24,7 +24,15 @@
         <%
             out.println(7+15);
             out.println(7+20);
-
+            pageContext.setAttribute("name", "xanmalodon", PageContext.SESSION_SCOPE);
+        %>
+        
+        <%
+//            try{
+            int k = 9/0;
+//            }catch(Exception e){
+//                out.println("Error" + e.getMessage());
+//            }
         %>
 <!--    <fx:h1></fx:h1> -->
     </body>
