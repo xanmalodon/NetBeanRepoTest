@@ -4,7 +4,15 @@
     Author     : xanmalodon
 --%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ page contentType="text/html" pageEncoding="UTF-8" import="java.sql.Statement, java.util.Random"
+         isELIgnored="false" autoFlush="true" isThreadSafe="true" session="false" info="Ecrit par xamalodon"%>
+
+<%@ page import="java.util.ArrayList"%>
+
+<%@ include file="header.jsp" %>
+
+<%--<%@ taglib uri="uri" prefix="fx" %>--%>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -18,6 +26,6 @@
             out.println(7+20);
 
         %>
-            
+<!--    <fx:h1></fx:h1> -->
     </body>
 </html>
